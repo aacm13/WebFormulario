@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="GET">
+        <fieldset style="width:0px;">
+            <legend><h2>Categoria</h2></legend>
+            <table>
+                <tr>
+                    <td>
+                        <fieldset style="width:200px; height:170px;">
+                            <legend><strong>Personal</strong></legend>
+                            <div>
+                                <label for="name">Name</label><br>
+                                <input type="text" name="name" id="name" placeholder="Alvaro Corpeño" required>
+                            </div>
+                            <div>
+                                <label for="date">Date of Birth</label><br>
+                                <input type="date" name="date" id="date" required>
+                            </div>
+                            <div>
+                                <label for="animal">Favourite Animal</label><br>
+                                <input type="text" name="animal" id="animal" placeholder="Lion">
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset style="width:200px; height:170px;">
+                            <legend><strong>Account</strong></legend>
+                            <div>
+                                <label for="email" >Email</label><br>
+                                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="pass">Password</label><br>
+                                <input type="password" name="pass" id="pass" placeholder="Password"
+                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> 
+                            </div>
+                            <div>
+                                <label for="verify">Verify Password</label><br>
+                                <input type="password" name="verify" id="verify" placeholder="Verify Password"
+                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset style="width:200px; height:170px;">
+                            <legend><strong>Contact</strong></legend>
+                            <div>
+                                <label for="address">Address</label><br>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div>
+                                <label for="city">City</label><br>
+                                <input type="text" name="city" id="city" placeholder="San Salvador">
+                            </div>
+                            <div>
+                                <label for="country">Country</label><br>
+                                <input type="text" name="country" id="country" placeholder="El Salvador">
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number</label><br>
+                                <input type="phone" name="phone" id="phone" placeholder="+503 7598-3246" required>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Enter">
+    </form>
+</body>
+</html>
